@@ -1,0 +1,7 @@
+<resources>
+	<string name="open">Deschide</string>
+	<string name="app_is_ready">%1$s este gata acum!</string>
+	<string name="install_ad_des">%1$s dintre utilizatori recomandă acestea:</string>
+	<string name="avazu_reviews">recenzii</string>
+	<string name="avazu_installs">instalări</string>
+</resources>
