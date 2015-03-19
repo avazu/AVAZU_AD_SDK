@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <drawable name="alpha_press">#ff222222</drawable>
-    <drawable name="alpha_normal">#00ffffff</drawable>
-    <drawable name="black_normal">#ff333333</drawable>
-</resources>

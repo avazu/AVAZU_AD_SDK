@@ -1,7 +1,0 @@
-<resources>
-	<string name="open">Otwórz</string>
-	<string name="app_is_ready">%1$s jest już gotowy!</string>
-	<string name="install_ad_des">%1$s użytkowników polecało:</string>
-	<string name="avazu_reviews">recenzje</string>
-	<string name="avazu_installs">instalacje</string>
-</resources>

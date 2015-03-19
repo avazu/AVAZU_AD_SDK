@@ -1,7 +1,0 @@
-<resources>
-	<string name="open">Otvorite</string>
-	<string name="app_is_ready">%1$s je sada spreman!</string>
-	<string name="install_ad_des">%1$s korisnika preoporučuje ove:</string>
-	<string name="avazu_reviews">ocjene</string>
-	<string name="avazu_installs">instaliranja</string>
-</resources>

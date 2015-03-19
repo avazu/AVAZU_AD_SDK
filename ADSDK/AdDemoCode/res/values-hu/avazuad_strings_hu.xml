@@ -1,7 +1,0 @@
-<resources>
-	<string name="open">Megnyitás</string>
-	<string name="app_is_ready">A %1$s most elérhető!</string>
-	<string name="install_ad_des">A felhasználók %1$s-a a következőket ajánlja:</string>
-	<string name="avazu_reviews">értékelések</string>
-	<string name="avazu_installs">telepítések</string>
-</resources>

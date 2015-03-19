@@ -1,7 +1,0 @@
-<resources>
-	<string name="open">打開</string>
-	<string name="app_is_ready">%1$s 安裝好了!</string>
-	<string name="install_ad_des">%1$s的用戶推薦:</string>
-	<string name="avazu_reviews">查看</string>
-	<string name="avazu_installs">安裝</string>
-</resources>
