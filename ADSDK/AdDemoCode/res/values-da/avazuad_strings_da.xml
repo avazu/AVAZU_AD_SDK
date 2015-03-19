@@ -1,0 +1,7 @@
+<resources>
+	<string name="open">Åbn</string>
+	<string name="app_is_ready">%1$s er klar nu!</string>
+	<string name="install_ad_des">%1$s af brugerne anbefaler disse:</string>
+	<string name="avazu_reviews">anmeldelser</string>
+	<string name="avazu_installs">installeringer</string>
+</resources>
