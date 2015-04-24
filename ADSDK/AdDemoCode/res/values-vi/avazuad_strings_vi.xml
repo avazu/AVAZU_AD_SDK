@@ -1,7 +1,0 @@
-<resources>
-	<string name="open">Mở</string>
-	<string name="app_is_ready">%1$s hiện đã sẵn sàng!</string>
-	<string name="install_ad_des">được %1$s người dùng khuyến khích:</string>
-	<string name="avazu_reviews">đánh giá</string>
-	<string name="avazu_installs">cài đặt</string>
-</resources>

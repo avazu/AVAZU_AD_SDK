@@ -1,7 +1,0 @@
-<resources>
-	<string name="open">เปิด</string>
-	<string name="app_is_ready">%1$s พร้อมแล้วตอนนี้</string>
-	<string name="install_ad_des">ผู้ใช้งาน  %1$s แนะนำสิ่งนี้:</string>
-	<string name="avazu_reviews">รีวิว</string>
-	<string name="avazu_installs">ติดตั้ง</string>
-</resources>

@@ -1,7 +1,0 @@
-<resources>
-	<string name="open">Aç</string>
-	<string name="app_is_ready">%1$s şimdi hazır!</string>
-	<string name="install_ad_des">Kullanıcıların %1$s\'i bunları öneriyor:</string>
-	<string name="avazu_reviews">değerlendirmeler</string>
-	<string name="avazu_installs">kurulumlar</string>
-</resources>

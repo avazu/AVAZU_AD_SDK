@@ -1,0 +1,80 @@
+<resources>
+
+    <string name="app_name">AvazuAdDemo</string>
+
+    <string name="go_ad_rect_wall">RectAppWall</string>
+    <string name="go_ad_banner_single">单个横幅</string>
+    <string name="go_ad_banner_wall">横幅应用墙</string>
+    <string name="go_ad_rect_single">单个矩形</string>
+    <string name="go_ad_custom">自定义</string>
+    <string name="size_setting">ViewSizeSetting</string>
+    <string name="ad_width">Width</string>
+    <string name="ad_height">Height</string>
+    <string name="element_setting">AdElementSetting</string>
+    <string name="ad_icon">Icon</string>
+    <string name="ad_title">Name</string>
+    <string name="ad_rating">Rating</string>
+    <string name="ad_size">Size</string>
+    <string name="ad_cat">Category</string>
+    <string name="ad_btn">Button</string>
+    <string name="ad_installs">Installs</string>
+    <string name="ad_review_nums">Reviews</string>
+    <string name="confirm">OK</string>
+    <string name="color_setting">ColorSetting</string>
+    <string name="wbc">WallBackColor</string>
+    <string name="bbc">BlockBackColor</string>
+    <string name="atc">TitleTextColor</string>
+    <string name="bbc1">ButtonBackColor</string>
+    <string name="btc">ButtonTextColor</string>
+    <string name="app_count">AppCount</string>
+    <string name="color_set_help">6 digits of RGB in Hex format， "FFFFFF" means WHITE</string>
+    <string name="color_set_hint">6 Hex digits RGB</string>
+    <string name="size_set_help">Size unit:dip</string>
+    <string name="width_hint">Enter width (unit:dip)</string>
+    <string name="height_hint">Enter height (unit:dip)</string>
+    
+    <string name="rect">RectSingle</string>
+    <string name="rect_wall">RectWall</string>
+    <string name="banner">BannerSingle</string>
+    <string name="banner_wall">BannerWall</string>
+    <string name="show_type">AdDisplayForm</string>
+    <string name="no_need_set">N/A</string>
+    
+    
+    <string name="style_rect">Button App Wall</string>
+    <string name="style_banner">Banner Ads</string>
+    <string name="go_ad_wall">Multiple Lines</string>
+    <string name="go_ad_single">Single Line</string>
+    <string name="go_ad_customized">Customized</string>
+    <string name="title_rect_single">RectSingle</string>
+    <string name="title_rect_wall">RectAppWall</string>
+    <string name="title_banner_single">BannerSingle</string>
+    <string name="title_banner_wall">BannerAppWall</string>
+    <string name="title_main">Avazu Native Ads Demo App</string>
+    <string name="title_raw_data">RawData</string>
+    <string name="ad_view_size">Ad Size</string>
+    <string name="ad_nums">Max Ad Num</string>
+    <string name="muti">×</string>
+    <string name="title_banner_customized">Banner: Customized</string>
+    <string name="title_rect_customized">Button: Customized</string>
+    <string name="other_ads">Other Ad Formats</string>
+    <string name="install_jack">App-Installed Ad</string>
+    <string name="browser_open_jack">Browser Footer Ad</string>
+    <string name="short_cut">Desktop Button Ad</string>
+    <string name="try_your_luck">App of the Day - Lucky Draw Ad</string>
+    <string name="browser_shortcut">Browser</string>
+    <string name="raw_data">Rawdata</string>
+    <string name="main_go_ad_rect_wall">Multiple Lines</string>
+    <string name="main_go_ad_rect_single">Single Line</string>
+    <string name="main_go_ad_banner_wall">Banner App Wall</string>
+    <string name="main_go_ad_banner_single">Single Banner</string>
+    <string name="recommendation">Recommended Apps</string>
+	<string name="try_luck">Lucky Draw</string>
+    <string name="hint_pls_select_one_element">Please select at least one ad content element!</string>
+    <string name="hint_pls_enter_correct_ads_number">Please enter the correct number of ads!</string>
+    <string name="hint_pls_enter_correct_wbc">Please enter the correct whole background color setting!</string>
+    <string name="hint_pls_enter_correct_bbc">Please enter the correct block background color setting!</string>
+    <string name="hint_pls_enter_correct_atc">Please enter the correct title text color setting!</string>
+    <string name="hint_pls_enter_correct_btbc">Please enter the correct button background color setting!</string>
+    <string name="hint_pls_enter_correct_btc">Please enter the correct button text color setting!</string>
+</resources>
