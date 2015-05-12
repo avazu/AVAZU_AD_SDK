@@ -1,9 +1,8 @@
 package com.avazu.demo.ad;
 
+import avazu.nativead.android.AvazuAdSdk;
 import android.app.Application;
 import android.util.Log;
-
-import avazu.nativead.android.AvazuAdSdk;
 
 public class AdDemoApp extends Application {
 	

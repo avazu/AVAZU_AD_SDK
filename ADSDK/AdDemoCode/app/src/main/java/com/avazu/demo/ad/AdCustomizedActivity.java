@@ -1,5 +1,8 @@
 package com.avazu.demo.ad;
 
+import avazu.nativead.android.ad.AdView;
+import avazu.nativead.android.ad.AdViewCreator;
+import avazu.nativead.android.ad.AdViewSettings;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -14,10 +17,6 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import avazu.nativead.android.ad.AdView;
-import avazu.nativead.android.ad.AdViewCreator;
-import avazu.nativead.android.ad.AdViewSettings;
 
 public class AdCustomizedActivity extends Activity implements View.OnClickListener,CompoundButton.OnCheckedChangeListener{
 	

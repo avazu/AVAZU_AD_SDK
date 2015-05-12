@@ -1,22 +1,24 @@
 package com.avazu.demo.ad;
 
-import android.app.Activity;
-import android.app.ProgressDialog;
-import android.os.Bundle;
-import android.util.Log;
-import android.widget.TextView;
-
 import java.util.List;
 
 import avazu.nativead.android.AdRawData;
 import avazu.nativead.android.AvazuAdSdk;
 import avazu.nativead.android.app.LoadRawDataCallback;
 
+import android.app.Activity;
+import android.app.ProgressDialog;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.TextView;
+
 public class AdRawDataShow extends Activity implements LoadRawDataCallback {
 
     TextView textView;
 
     ProgressDialog dialog;
+
+    String mExcludePackages;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +30,9 @@ public class AdRawDataShow extends Activity implements LoadRawDataCallback {
         dialog = new ProgressDialog(this);
         dialog.setMessage("loading...");
         dialog.setCanceledOnTouchOutside(false);
-
-        AvazuAdSdk.preloadRawData(getApplicationContext(), "6395", 10, false, this);
+        // 传入不想显示（或已经显示过）的应用的campaignid, 若有多个，则用","进行分隔，如“27841,27813,27910”
+        mExcludePackages = "27841";
+        AvazuAdSdk.preloadRawData(getApplicationContext(), "6395", 5, mExcludePackages, false, this);
     }
 
     @Override
@@ -53,9 +56,7 @@ public class AdRawDataShow extends Activity implements LoadRawDataCallback {
                     .append("appreviewnum=").append(data.appreviewnum).append(",")
                     .append("campaignid=").append(data.campaignid).append(",")
                     .append("clkurl=").append(data.clkurl).append(",")
-                    .append("countries=").append(data.countries).append(",")
                     .append("description=").append(data.description).append(",")
-                    .append("targetURL=").append(data.targetURL).append(",")
                     .append("icon=").append(data.icon).append(",")
                     .append("payout=").append(data.payout).append(",")
                     .append("pkgname=").append(data.pkgname).append(",")

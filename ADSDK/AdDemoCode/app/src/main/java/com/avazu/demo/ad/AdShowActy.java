@@ -1,15 +1,14 @@
 package com.avazu.demo.ad;
 
+import avazu.nativead.android.ad.AdView;
+import avazu.nativead.android.ad.AdViewCreator;
+import avazu.nativead.android.ad.AdViewSettings;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import avazu.nativead.android.ad.AdView;
-import avazu.nativead.android.ad.AdViewCreator;
-import avazu.nativead.android.ad.AdViewSettings;
 
 public class AdShowActy extends Activity implements View.OnClickListener{
 	

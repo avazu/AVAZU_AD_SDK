@@ -1,14 +1,13 @@
 package com.avazu.demo.ad;
 
+import avazu.nativead.android.ad.AdView;
+import avazu.nativead.android.ad.AdViewCreator;
+import avazu.nativead.android.ad.AdViewSettings;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-
-import avazu.nativead.android.ad.AdView;
-import avazu.nativead.android.ad.AdViewCreator;
-import avazu.nativead.android.ad.AdViewSettings;
 
 public class AdRectWallDemo extends Activity {
 	

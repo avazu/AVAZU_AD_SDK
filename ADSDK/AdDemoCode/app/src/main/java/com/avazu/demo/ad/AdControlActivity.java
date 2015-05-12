@@ -1,5 +1,8 @@
 package com.avazu.demo.ad;
 
+import java.util.Locale;
+
+import avazu.nativead.android.ad.AdViewSettings;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,10 +17,6 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Toast;
-
-import java.util.Locale;
-
-import avazu.nativead.android.ad.AdViewSettings;
 
 public class AdControlActivity extends Activity implements OnClickListener,OnCheckedChangeListener{
 	

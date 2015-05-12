@@ -1,13 +1,13 @@
 package com.avazu.demo.ad;
 
+import java.io.UnsupportedEncodingException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Rect;
 import android.util.Log;
-
-import java.io.UnsupportedEncodingException;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
 public class Utils {
 
