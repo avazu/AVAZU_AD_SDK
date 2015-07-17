@@ -61,7 +61,7 @@ public class AdBannerWallDemo extends Activity {
 		adSettings.setBlockBackColor("#FFFFFF");
 		adSettings.setAppTitleColor("#333333");
 		AvazuAdView adView = new AvazuAdView(this, adSettings);
-		adView.setSourceId("6395");
+		adView.setSourceId("15887");
 		adView.loadWebviewAd();
 		RelativeLayout.LayoutParams adViewLayoutParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.WRAP_CONTENT);
 		mLayout.addView(adView, adViewLayoutParams);

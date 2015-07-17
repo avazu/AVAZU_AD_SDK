@@ -27,7 +27,7 @@ public class AdRawDataShow extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.demo_raw_data);
         textView = (TextView) findViewById(R.id.raw_data_show);
-        AdSdk.getAdRawData(getApplicationContext(), "6395", "", 5, listener);
+        AdSdk.getAdRawData(getApplicationContext(), "15887", "", 5, 1, listener);
     }
 
     FetchRawDataListener listener = new FetchRawDataListener() {
@@ -51,8 +51,13 @@ public class AdRawDataShow extends Activity {
                         .append("icon=").append(data.icon).append(",")
                         .append("payout=").append(data.payOut).append(",")
                         .append("pkgname=").append(data.packageName).append(",")
-                        .append("title=").append(data.title).append("")
+                        .append("title=").append(data.title).append(",")
+                        .append("creatives=").append(data.creatives).append("")
                         .append("}").append(",");
+                FetchAdResult.creatives  datadata =  data.creatives;
+                if (datadata.tablet_fullscreen != null) {
+                    L.d(datadata.tablet_fullscreen);
+                }
             }
             textView.setText(mStringBuilder);
         }

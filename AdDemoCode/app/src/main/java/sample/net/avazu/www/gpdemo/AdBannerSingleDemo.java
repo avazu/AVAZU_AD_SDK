@@ -5,11 +5,13 @@ import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.widget.RelativeLayout;
 
+import nativesdk.ad.adcore.common.utils.L;
 import nativesdk.ad.adcore.modules.webviewad.AdViewSettings;
+import nativesdk.ad.adcore.modules.webviewad.AdViewStateListener;
 import nativesdk.ad.adcore.modules.webviewad.AvazuAdView;
 
 
-public class AdBannerSingleDemo extends Activity {
+public class AdBannerSingleDemo extends Activity implements AdViewStateListener {
 	
 	private RelativeLayout mAdLayout;
 	
@@ -49,6 +51,23 @@ public class AdBannerSingleDemo extends Activity {
 			margin = 0;
 		}
 		adLayoutParams.bottomMargin = margin;
+		adView.setAdViewStateListener(this);
 		mAdLayout.addView(adView, adLayoutParams);
+	}
+
+	@Override
+	public void onLoadAdStart(AvazuAdView view) {
+		L.d("onLoadAdStart");
+	}
+
+	@Override
+	public void onLoadAdFinish(AvazuAdView view, int adCount) {
+		L.d("onLoadAdFinish");
+	}
+
+	@Override
+	public boolean onLoadAdError(AvazuAdView view, String error) {
+		L.d("onLoadAdError");
+		return true;
 	}
 }

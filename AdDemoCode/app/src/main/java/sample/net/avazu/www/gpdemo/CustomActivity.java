@@ -10,7 +10,7 @@ import nativesdk.ad.adcore.modules.webviewad.AdViewSettings;
 
 public class CustomActivity extends Activity implements OnClickListener{
 	
-	private static final String SOURCE_ID = "6395";
+	private static final String SOURCE_ID = "15887";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub

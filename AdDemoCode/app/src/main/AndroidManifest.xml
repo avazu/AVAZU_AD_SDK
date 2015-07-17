@@ -19,6 +19,7 @@
         android:name=".AdDemoApp"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <!--ad sdk end-->
         <activity
             android:name="MainActivity"
             android:screenOrientation="portrait">

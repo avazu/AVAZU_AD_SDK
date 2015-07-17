@@ -6,11 +6,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import nativesdk.ad.adcore.common.utils.L;
 import nativesdk.ad.adcore.modules.webviewad.AdViewSettings;
+import nativesdk.ad.adcore.modules.webviewad.AdViewStateListener;
 import nativesdk.ad.adcore.modules.webviewad.AvazuAdView;
 
 
-public class AdBannerSingleDemo2 extends Activity {
+public class AdBannerSingleDemo2 extends Activity implements AdViewStateListener {
 	
 	private ImageView mImg;
 	private ImageView mImg2;
@@ -60,9 +62,24 @@ public class AdBannerSingleDemo2 extends Activity {
 		adSettings.setNeedTitle(true);
 		AvazuAdView adView = new AvazuAdView(this, adSettings);
 		adView.loadWebviewAd();
+		adView.setAdViewStateListener(this);
 		RelativeLayout.LayoutParams adViewLayoutParams = new RelativeLayout.LayoutParams(
 				screenWidth, Utils.dip2px(this, showHeightDip));
 		mAdLayout.addView(adView, adViewLayoutParams);
 	}
-	
+	@Override
+	public void onLoadAdStart(AvazuAdView view) {
+		L.d("onLoadAdStart");
+	}
+
+	@Override
+	public void onLoadAdFinish(AvazuAdView view, int adCount) {
+		L.d("onLoadAdFinish");
+	}
+
+	@Override
+	public boolean onLoadAdError(AvazuAdView view, String error) {
+		L.d("onLoadAdError");
+		return true;
+	}
 }

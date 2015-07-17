@@ -90,6 +90,6 @@
     <orderEntry type="library" exported="" name="support-annotations-22.0.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-base-6.5.87" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-22.0.0" level="project" />
-    <orderEntry type="library" exported="" name="adsdk_1.3.0" level="project" />
+    <orderEntry type="library" exported="" name="adsdk_1.3.1" level="project" />
   </component>
 </module>

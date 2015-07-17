@@ -251,165 +251,11 @@
                 android:orientation="vertical" >
 
                 <LinearLayout
-                    android:id="@+id/open_install_jack"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:visibility="gone">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="30dp"
-                        android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        android:text="@string/install_jack"
-                        android:textColor="#000000"
-                        android:textSize="18sp" />
-
-                    <ImageView
-                        android:layout_width="14dp"
-                        android:layout_height="20dp"
-                        android:layout_marginRight="20dp"
-                        android:src="@drawable/ic_arrow" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:visibility="gone"
-                    android:background="#333333" />
-
-                <LinearLayout
-                    android:visibility="gone"
-                    android:id="@+id/browser_open_jack"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal" >
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="30dp"
-                        android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        android:text="@string/browser_open_jack"
-                        android:textColor="#000000"
-                        android:textSize="18sp" />
-
-                    <ImageView
-                        android:layout_width="14dp"
-                        android:layout_height="20dp"
-                        android:layout_marginRight="20dp"
-                        android:src="@drawable/ic_arrow" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:visibility="gone"
-                    android:background="#333333" />
-
-                <LinearLayout
-                    android:id="@+id/set_short_cut"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:visibility="gone">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="30dp"
-                        android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        android:text="@string/short_cut"
-                        android:textColor="#000000"
-                        android:textSize="18sp" />
-
-                    <ImageView
-                        android:layout_width="14dp"
-                        android:layout_height="20dp"
-                        android:layout_marginRight="20dp"
-                        android:src="@drawable/ic_arrow" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#333333"
-                    android:visibility="gone"/>
-
-                <LinearLayout
-                    android:id="@+id/set_try_your_luck"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:gravity="center_vertical"
-                    android:visibility="gone"
-                    android:orientation="horizontal" >
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="30dp"
-                        android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        android:text="@string/try_your_luck"
-                        android:textColor="#000000"
-                        android:textSize="18sp" />
-
-                    <ImageView
-                        android:layout_width="14dp"
-                        android:layout_height="20dp"
-                        android:layout_marginRight="20dp"
-                        android:src="@drawable/ic_arrow" />
-                </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#333333"
-                    android:visibility="gone" />
-
-                <LinearLayout
-                    android:id="@+id/set_browser_short_cut"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:visibility="gone" >
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="30dp"
-                        android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        android:text="@string/browser_shortcut"
-                        android:textColor="#000000"
-                        android:textSize="18sp" />
-
-                    <ImageView
-                        android:layout_width="14dp"
-                        android:layout_height="20dp"
-                        android:layout_marginRight="20dp"
-                        android:src="@drawable/ic_arrow" />
-                </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#333333"
-                    android:visibility="gone"
-                     />
-
-                <LinearLayout
                     android:id="@+id/raw_data"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal" >
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="0dp"
@@ -418,6 +264,35 @@
                         android:layout_weight="1"
                         android:gravity="center_vertical"
                         android:text="@string/raw_data"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#333333" />
+
+                <LinearLayout
+                    android:id="@+id/direct_to_market"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/direct_to_market"
                         android:textColor="#000000"
                         android:textSize="18sp" />
 
