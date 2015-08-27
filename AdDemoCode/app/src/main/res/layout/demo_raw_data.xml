@@ -5,6 +5,7 @@
     android:orientation="vertical" >
 
     <TextView
+        android:id = "@+id/raw_data_title"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#323333"

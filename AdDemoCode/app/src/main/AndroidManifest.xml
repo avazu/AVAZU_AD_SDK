@@ -54,6 +54,9 @@
         <activity
             android:name="AdBannerSingleDemo2"
             android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="AdSubscriptionActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

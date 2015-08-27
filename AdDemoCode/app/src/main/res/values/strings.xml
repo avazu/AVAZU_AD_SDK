@@ -65,6 +65,7 @@
     <string name="browser_shortcut">Browser</string>
     <string name="raw_data">Rawdata</string>
     <string name="direct_to_market">Direct To Market</string>
+    <string name="subscription_ad">Fullscreen Ad</string>
     <string name="main_go_ad_rect_wall">Multiple Lines</string>
     <string name="main_go_ad_rect_single">Single Line</string>
     <string name="main_go_ad_banner_wall">Banner App Wall</string>

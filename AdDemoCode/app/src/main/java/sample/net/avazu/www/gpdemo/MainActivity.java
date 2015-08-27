@@ -32,6 +32,7 @@ public class MainActivity extends Activity implements OnClickListener {
         findViewById(R.id.go_rect_custom).setOnClickListener(this);
         findViewById(R.id.raw_data).setOnClickListener(this);
         findViewById(R.id.direct_to_market).setOnClickListener(this);
+        findViewById(R.id.subscription_ad).setOnClickListener(this);
         AdSdk.initialize(getApplicationContext(), "15887");
     }
 
@@ -157,6 +158,10 @@ public class MainActivity extends Activity implements OnClickListener {
                         L.d("DirectMarketToFail");
                     }
                 });
+                break;
+            case R.id.subscription_ad:
+                Intent SubscriptionIntent = new Intent(this, AdSubscriptionActivity.class);
+                startActivity(SubscriptionIntent);
                 break;
         }
     }

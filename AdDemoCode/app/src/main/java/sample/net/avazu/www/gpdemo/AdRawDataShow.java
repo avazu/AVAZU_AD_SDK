@@ -27,7 +27,12 @@ public class AdRawDataShow extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.demo_raw_data);
         textView = (TextView) findViewById(R.id.raw_data_show);
-        AdSdk.getAdRawData(getApplicationContext(), "15887", "", 5, 1, listener);
+        AdSdk.getAdRawData(getApplicationContext(), "15887", "", 5, 1, "google", listener);
+        /** 直接跳转gp的广告**/
+//        AdSdk.getAdRawData(getApplicationContext(), "15887", "", 5, 1, "ddl", listener);
+        /** 直接下载的广告 **/
+//        AdSdk.getAdRawData(getApplicationContext(), "15887", "", 5, 1, "optin", listener);
+        /** 订阅类全屏广告 **/
     }
 
     FetchRawDataListener listener = new FetchRawDataListener() {
@@ -54,7 +59,7 @@ public class AdRawDataShow extends Activity {
                         .append("title=").append(data.title).append(",")
                         .append("creatives=").append(data.creatives).append("")
                         .append("}").append(",");
-                FetchAdResult.creatives  datadata =  data.creatives;
+                FetchAdResult.creatives datadata = data.creatives;
                 if (datadata.tablet_fullscreen != null) {
                     L.d(datadata.tablet_fullscreen);
                 }
