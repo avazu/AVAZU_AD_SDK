@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sample.net.avazu.www.gpdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="AdCustomizedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="AdRawDataShow"
+            android:screenOrientation="portrait" />
+        <!--ad sdk end-->
+
+        <activity
+            android:name="AdBannerSingleDemo"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="AdBannerWallDemo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="AdRectWallDemo"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="AdRectSingleDemo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="AdBannerSingleDemo2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="AdSubscriptionActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="nativesdk.ad.adsdk.modules.activityad.MarketActivity" />
+
+        <activity
+            android:name="nativesdk.ad.adsdk.modules.activityad.AvLoadingActivity">
+            <intent-filter>
+                <action android:name="nativesdk.ad.adsdk.modules.activityad.AvLoadingActivity.SHORT_CUT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="nativesdk.ad.adsdk.modules.activityad.rss.NewsDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="nativesdk.ad.adsdk.modules.activityad.rss.NewsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

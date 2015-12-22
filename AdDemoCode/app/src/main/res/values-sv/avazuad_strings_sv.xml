@@ -1,7 +1,0 @@
-<resources>
-	<string name="open">öppet</string>
-	<string name="app_is_ready">%1$s är klar nu!</string>
-	<string name="install_ad_des">%1$s av användarna rekommendera följande:</string>
-	<string name="avazu_reviews">recensioner</string>
-	<string name="avazu_installs">installationer</string>
-</resources>
