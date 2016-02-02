@@ -98,14 +98,16 @@ public class MainActivity extends Activity implements OnClickListener {
                 startActivity(SubscriptionIntent);
                 break;
             case R.id.activity_ad:
-                AdSdk.setResourceMode(this, true);
-                AdSdk.enableFacebookAdInMarket(this, "1447264415577075_1488442958125887");
-                AdSdk.showAppMarket(this, "18000");
+//                AdSdk.enableFacebookAdInMarket(MainActivity.this, "xxxxxx");
+//                AdSdk.enableAdmobInMarket(MainActivity.this, "xxxxxx");
+                AdSdk.showAppMarket(this, "18001");
                 break;
             case R.id.news_ad:
-                AdSdk.setResourceMode(this, true);
-                AdSdk.enableFacebookAdInNewsFeed(this, "1447264415577075_1488442958125887");
-                AdSdk.showNewsFeed(this, "18001");
+//              AdSdk.enableFacebookInterstitialInNewsFeed(MainActivity.this, "xxxxxx");
+//              AdSdk.enableFacebookBannerInNewsFeed(MainActivity.this, "xxxxxx");
+//              AdSdk.enableFacebookNativeAdInNewsFeed(MainActivity.this, "xxxxx");
+                AdSdk.enableApxNativeAdInNewsFeed(MainActivity.this, "18000");
+                AdSdk.showNewsFeed(MainActivity.this, false);
                 break;
         }
     }

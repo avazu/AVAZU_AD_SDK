@@ -13,7 +13,7 @@
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
     <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -57,10 +57,11 @@
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="nativesdk.ad.adsdk.modules.activityad.MarketActivity" />
+            android:name="nativesdk.ad.adsdk.modules.activityad.MarketActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />>
 
-        <activity
-            android:name="nativesdk.ad.adsdk.modules.activityad.AvLoadingActivity">
+        <activity android:name="nativesdk.ad.adsdk.modules.activityad.AvLoadingActivity">
             <intent-filter>
                 <action android:name="nativesdk.ad.adsdk.modules.activityad.AvLoadingActivity.SHORT_CUT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -69,12 +70,19 @@
 
         <activity
             android:name="nativesdk.ad.adsdk.modules.activityad.rss.NewsDetailActivity"
-            android:configChanges="orientation"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
             android:name="nativesdk.ad.adsdk.modules.activityad.rss.NewsActivity"
-            android:configChanges="orientation"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.facebook.ads.InterstitialAdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:noHistory="true" />
     </application>
 
 </manifest>

@@ -44,9 +44,9 @@ public class AdRectWallDemo extends Activity {
 	
 	private void showAd(){
 		AvazuAdView adView = new AvazuAdView(this, AvazuAdView.MULTIPLE_LINE_RECTANGLE, "15887", -1, -1);
-		adView.setAdCatagoryVisible(false);
-		adView.setAdSizeVisible(false);
-		adView.setAdReviewNumberVisible(false);
+		adView.setAdCatagoryVisibility(false);
+		adView.setAdSizeVisibility(false);
+		adView.setAdReviewNumberVisibility(false);
 		adView.setAdNumer(12);
 		adView.loadWebviewAd(this);
 		RelativeLayout.LayoutParams adLayoutParams = new RelativeLayout.LayoutParams(-1,-1);

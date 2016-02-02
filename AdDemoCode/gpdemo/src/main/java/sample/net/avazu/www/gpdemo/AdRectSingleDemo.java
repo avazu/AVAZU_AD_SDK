@@ -55,10 +55,10 @@ public class AdRectSingleDemo extends Activity {
 		int showHeightDip = showWidthDip * 175 / (97 * 6);
 
 		AvazuAdView adView = new AvazuAdView(this, AvazuAdView.SINGLE_LINE_RECTANGLE, "15887", showWidthDip, showHeightDip);
-		adView.setAdCatagoryVisible(false);
-		adView.setAdSizeVisible(false);
-		adView.setAdInstallButtonVisible(false);
-		adView.setAdReviewNumberVisible(false);
+		adView.setAdCatagoryVisibility(false);
+		adView.setAdSizeVisibility(false);
+		adView.setAdInstallButtonVisibility(false);
+		adView.setAdReviewNumberVisibility(false);
 		adView.setAdNumer(6);
 		adView.loadWebviewAd(this);
 		adView.setLayoutParams(createLayoutParams(Utils.dip2px(this, showWidthDip + 1),

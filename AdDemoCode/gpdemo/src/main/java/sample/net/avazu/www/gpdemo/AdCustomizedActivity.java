@@ -352,14 +352,14 @@ public class AdCustomizedActivity extends Activity implements View.OnClickListen
 		}
 		AvazuAdView adView = new AvazuAdView(this, show_type, "15887", width_dip, height_dip);
 		adView.setAdNumer(appNums);
-		adView.setAdInstallButtonVisible(mIsNeedBtn);
-		adView.setAdCatagoryVisible(mIsNeedCat);
+		adView.setAdInstallButtonVisibility(mIsNeedBtn);
+		adView.setAdCatagoryVisibility(mIsNeedCat);
 		adView.setAdIconVisibility(mIsNeedIcon);
-		adView.setAdInstallNumberVisible(mIsNeedInstalls);
-		adView.setAdRatingVisible(mIsNeedRating);
-		adView.setAdReviewNumberVisible(mIsNeedReviewNums);
-		adView.setAdSizeVisible(mIsNeedSize);
-		adView.setAdTitleVisible(mIsNeedTitle);
+		adView.setAdInstallNumberVisibility(mIsNeedInstalls);
+		adView.setAdRatingVisibility(mIsNeedRating);
+		adView.setAdReviewNumberVisibility(mIsNeedReviewNums);
+		adView.setAdSizeVisibility(mIsNeedSize);
+		adView.setAdTitleVisibility(mIsNeedTitle);
 		adView.setAdMainBackgroundColor(TextUtils.isEmpty(mWbc) ? mWbc : "#" + mWbc);
 		adView.setAdBlockBackgroundColor(TextUtils.isEmpty(mBbc) ? mBbc : "#" + mBbc);
 		adView.setAdTitleColor(TextUtils.isEmpty(mAtc) ? mAtc : "#" + mAtc);
